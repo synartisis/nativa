@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="auth.css">
   <title>Document</title>
+  <script src="auth.js" type="module"></script>
 </head>
 <body>
   <main>
-    auth
-
     <form action="login" method="post">
+      <div>
+        <label for="">username</label>
+        <input type="text" name="username" required>
+      </div>
+      <div>
+        <label for="">password</label>
+        <input type="password" name="password" required>
+      </div>
+      <div class="message"></div>
       <button>login</button>
     </form>
   </main>

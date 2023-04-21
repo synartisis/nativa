@@ -1,5 +1,31 @@
 * { box-sizing: border-box; }
 
 :root {
-  background-color: rgb(196, 218, 159);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  margin: 0;
+}
+
+main {
+  border: solid 1px #333;
+  padding: 2rem;
+  background-color: #81c1b1;
+  border-radius: 4px;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+form input { margin-left: 6px; line-height: 1.6; }
+
+form button { padding: .2rem 3rem; margin-top: 1.6rem; font: inherit; }
+form .message { color: darkred; }
+form .message:empty { display: none; }
