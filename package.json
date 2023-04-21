@@ -1,0 +1,21 @@
+{
+  "name": "nativa",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": "./lib/nativa.js"
+  },
+  "scripts": {
+    "preversion": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rawdb": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13"
+  }
+}
