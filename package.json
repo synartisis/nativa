@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rawdb": "^0.2.4"
+    "rawdb": "^0.2.5"
   },
   "devDependencies": {
     "@types/node": "^18.15.13"
