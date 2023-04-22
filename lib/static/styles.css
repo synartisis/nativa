@@ -32,12 +32,17 @@ aside {
   background-color: #333;
   color: #aaa;
   padding-block-start: 2.5rem;
+  overflow: auto;
 }
 
 main {
   grid-area: mn;
   padding: .5rem;
+  overflow: auto;
 }
 
 #collections ul { list-style: none; padding: 0; margin: 0; }
 #collections ul > li { padding: .3rem .6rem; }
+
+.item { display: block; cursor: pointer; text-decoration: none; }
+.item:hover { background-color: #888; }

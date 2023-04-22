@@ -7,13 +7,12 @@
     ".": "./lib/nativa.js"
   },
   "scripts": {
-    "preversion": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rawdb": "^0.2.5"
+    "rawdb": "^0.2.6"
   },
   "devDependencies": {
     "@types/node": "^18.15.13"
