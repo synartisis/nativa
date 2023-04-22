@@ -1,13 +1,12 @@
 {
   "name": "nativa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "exports": {
     ".": "./lib/nativa.js"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
