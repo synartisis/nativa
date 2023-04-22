@@ -4,9 +4,7 @@
     "checkJs": true,
     "strict": true,
     "noEmit": true,
-    "lib": ["ESNext"],
     "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "nodenext"
+    "target": "ESNext"
   }
 }

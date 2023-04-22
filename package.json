@@ -1,12 +1,14 @@
 {
   "name": "nativa",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "exports": {
     ".": "./lib/nativa.js"
   },
-  "scripts": {},
+  "scripts": {
+    "preversion": "tsc -p lib/server/tsconfig.json && tsc -p lib/client/tsconfig.json"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
