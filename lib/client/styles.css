@@ -51,10 +51,14 @@ main > * { padding: .5rem; }
 .item:hover { background-color: #888; }
 
 .item-view-header { display: flex; background-color: #444; color: white; gap: 1rem; }
+.item-view-header[data-view-mode="edit"] [data-action="edit"] { display: none; }
+.item-view-header[data-view-mode="read"] [data-action="save"],
+.item-view-header[data-view-mode="read"] [data-action="cancel"] { display: none; }
+
 .item-view label { display: inline-block; min-width: 6rem; font-style: italic; text-align: end; 
   padding-inline-end: .3rem; margin-block-end: .3rem; opacity: .7; }
 .item-view label::after { content: ':'; }
-[data-view-mode] { text-decoration: underline; cursor: pointer; }
+[data-action] { text-decoration: underline; cursor: pointer; }
 [data-lang-selector] { background-color: #444; color: #ccc; }
 .property-viewer, .property-editor { display: flex; margin: .2rem 0; }
 .property-value { max-height: 20rem; overflow: auto; }
