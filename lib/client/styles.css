@@ -6,6 +6,9 @@
 }
 
 a { color: inherit;}
+input, textarea, select { padding: .2rem .3rem; }
+input[type="text"], textarea { width: 100%; }
+textarea { height: 20rem; }
 
 body {
   display: grid;
@@ -37,12 +40,21 @@ aside {
 
 main {
   grid-area: mn;
-  padding: .5rem;
   overflow: auto;
 }
+main > * { padding: .5rem; }
 
 #collections ul { list-style: none; padding: 0; margin: 0; }
 #collections ul > li { padding: .3rem .6rem; }
 
 .item { display: block; cursor: pointer; text-decoration: none; }
 .item:hover { background-color: #888; }
+
+.item-view-header { display: flex; background-color: #444; color: white; gap: 1rem; }
+.item-view label { display: inline-block; min-width: 6rem; font-style: italic; text-align: end; 
+  padding-inline-end: .3rem; margin-block-end: .3rem; opacity: .7; }
+.item-view label::after { content: ':'; }
+[data-view-mode] { text-decoration: underline; cursor: pointer; }
+[data-lang-selector] { background-color: #444; color: #ccc; }
+.property-viewer, .property-editor { display: flex; margin: .2rem 0; }
+.property-value { max-height: 20rem; overflow: auto; }
