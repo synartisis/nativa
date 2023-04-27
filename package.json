@@ -7,13 +7,13 @@
     ".": "./lib/nativa.js"
   },
   "scripts": {
-    "preversion": "tsc -p lib/server/tsconfig.json && tsc -p lib/client/tsconfig.json"
+    "preversion": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rawdb": "^0.3.0"
+    "rawdb": "^0.5.1"
   },
   "devDependencies": {
     "@types/node": "^18.15.13"
