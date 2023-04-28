@@ -8,4 +8,5 @@
     "target": "ESNext",
     "moduleResolution": "nodenext"
   },
+  "exclude": ["node_modules"],
 }
