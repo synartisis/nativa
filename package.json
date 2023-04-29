@@ -4,10 +4,15 @@
   "description": "",
   "type": "module",
   "exports": {
-    ".": "./lib/nativa.js"
+    ".": {
+      "types": "./types/nativa.js",
+      "default": "./lib/nativa.js"
+    }
   },
   "scripts": {
-    "preversion": "tsc"
+    "types:check": "tsc -p tsconfig.json",
+    "types:declarations": "tsc -p tsconfig.declarations.json && cp lib/types.d.ts types/",
+    "preversion": "npm run types:check && npm run types:declarations"
   },
   "keywords": [],
   "author": "",
