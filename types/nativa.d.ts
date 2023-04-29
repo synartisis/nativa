@@ -10,8 +10,10 @@ export function config({ rootDir, adminUrl, languages }: Config): Promise<void>;
  *
  * - attaches rawdb data on http.ServerResponse.locals for use in UI databinding
  * - enables nativa admin section
- * @returns {import('node:http').RequestListener}
+ * @returns {(req: import('node:http').IncomingMessage, res: import('node:http').ServerResponse & { locals: string }) => void}
  * @example server.use(nativa.middleware())
  * */
-export function middleware(): import('node:http').RequestListener;
+export function middleware(): (req: import('node:http').IncomingMessage, res: import('node:http').ServerResponse & {
+    locals: string;
+}) => void;
 export type Config = import('./types.js').Config;
