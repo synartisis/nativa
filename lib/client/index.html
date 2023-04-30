@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js" type="module"></script>
+  <script src="index.js" type="module"></script>
   <title>nativa</title>
   <style id="language-styles"></style>
 </head>
@@ -19,9 +19,24 @@
       <a href="auth/logout">logout</a>
     </div>
   </header>
+
   <aside>
-    <div id="collections"></div>
+    <nav>
+      <div class="nav-section">
+        <div class="nav-header">collections</div>
+        <div id="collections"></div>
+      </div>
+      <div class="nav-section">
+        <div class="nav-header">users</div>
+        <ul>
+          <li><a href="#/users/register">register user</a></li>
+          <li><a href="#/users/password-reset">reset password</a></li>
+        </ul>
+      </div>
+    </nav>
   </aside>
+
   <main></main>
+
 </body>
 </html>

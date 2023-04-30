@@ -44,8 +44,12 @@ main {
 }
 main > * { padding: .5rem; }
 
-#collections ul { list-style: none; padding: 0; margin: 0; }
-#collections ul > li { padding: .3rem .6rem; }
+.nav-section { margin-bottom: 2rem; }
+.nav-header { background-color: #888; color: #111; padding: .3rem .1rem; text-align: center; font-weight: 600; }
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav ul > li { padding: .3rem .6rem; }
+nav ul > li.selected { background-color: #222; }
+nav ul > li a { text-decoration: none; }
 
 .item { display: block; cursor: pointer; text-decoration: none; }
 .item:hover { background-color: #888; }
@@ -62,3 +66,6 @@ main > * { padding: .5rem; }
 [data-lang-selector] { background-color: #444; color: #ccc; }
 .property-viewer, .property-editor { display: flex; margin: .2rem 0; }
 .property-value { max-height: 20rem; overflow: auto; }
+
+.user-register-form { max-width: 16rem; }
+.user-password-reset-form { max-width: 16rem; }
