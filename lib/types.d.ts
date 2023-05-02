@@ -1,3 +1,5 @@
+import type * as http from 'node:http'
+
 export interface Config {
   /**
    * nativa root directory  
@@ -20,3 +22,17 @@ export interface Config {
    */
   languages?: string[]
 }
+
+
+export namespace nativa {
+
+  type Session = { sessionId: string, username: string, role: string }
+
+  type Request = http.IncomingMessage & { session: Session }
+
+  type Response = http.ServerResponse & { locals: any }
+
+  type RequestListener = (req: Request, res: Response) => void
+
+}
+
