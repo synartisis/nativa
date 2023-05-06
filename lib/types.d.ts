@@ -26,9 +26,9 @@ export interface Config {
 
 export namespace nativa {
 
-  type Session = { sessionId: string, username: string, role: string }
+  type Session = { sessionId: string, username: string, roles: string[] }
 
-  type Request = http.IncomingMessage & { session: Session }
+  type Request = http.IncomingMessage & { session?: Session }
 
   type Response = http.ServerResponse & { locals: any }
 
